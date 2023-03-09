@@ -1,0 +1,15 @@
+git init инициализация
+git remote add origin link привязка проекта к репозиторию
+create file .gitignore
+        .gitignore
+        .idea
+        __pycache__/
+        venv
+
+
+git add ./file
+git commit -m 'result'
+git push origin master/main
+
+git rm --cached удаление файлов
+

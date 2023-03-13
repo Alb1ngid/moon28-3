@@ -52,6 +52,8 @@ class Kat:
                f'a im a cat\n' \
                f'{self.hvost}\n' \
                f'#########'
+
+
 kat2 = Kat('Арген', 4, 'оранжевый')
 kat2.name = 'Адыл'
 kat3 = Kat('emir', 2, 'red')
@@ -59,3 +61,5 @@ kat2.m()
 print(len(kat2))
 print(kat2)
 print(kat3)
+
+

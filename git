@@ -13,3 +13,5 @@ git push origin master/main
 
 git rm --cached удаление файлов
 
+git remote romove origin
+git clone link

@@ -8,6 +8,7 @@
 # _ = защищенный
 # __ = скрытый
 
+
 class Bank:
     def __init__(self, name, money, key):
         self.name = name
@@ -23,8 +24,17 @@ class Bank:
     def __printKey(self):
         print(self._key)
 
+    def get_money(self):
+        return self.__money
+
+    def set_money(self, money):
+        self.__money = money
+
 
 user = Bank('Жаннат', 4_000_000, '12edswadw')
+
+user.set_money(3000)
+print(user.get_money())
 
 # user.keys()
 # user._key = '1234'
@@ -33,8 +43,9 @@ user = Bank('Жаннат', 4_000_000, '12edswadw')
 # print(user._key)
 
 
-user._Bank__money = 10000000000
+# user._Bank__money = 10000000000
 
 print(user)
 
 print(user.__dir__())
+# object._Class__metod()

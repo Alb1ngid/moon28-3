@@ -1,6 +1,6 @@
 # 1 Наследование
 # object
-#
+
 # 2 плиморфизм
 
 # 3 инкапсуляция
@@ -32,6 +32,10 @@ class Bank:
 
 
 user = Bank('Жаннат', 4_000_000, '12edswadw')
+user1 = Bank('Жаннат', 4_000_000, '12edswadw')
+user2 = Bank('Жаннат', 4_000_000, '12edswadw')
+user3 = Bank('Жаннат', 4_000_000, '12edswadw')
+user5 = Bank('Жаннат', 4_000_000, '12edswadw')
 
 user.set_money(3000)
 print(user.get_money())

@@ -4,6 +4,7 @@
 # реляционные
 # CRUD CREATE REED UPDATE DELETE
 
+
 import sqlite3
 from sqlite3 import Error
 
@@ -27,10 +28,10 @@ def create_table(conn, sql):
 
 def reed(conn):
     try:
-        sql='SELECT * FROM student'
+        sql = 'SELECT * FROM student'
         cursor = conn.cursor()
         cursor.execute(sql)
-        rows=cursor.fetchall()
+        rows = cursor.fetchall()
 
         for i in rows:
             print(i)
@@ -38,15 +39,13 @@ def reed(conn):
         print(e)
 
 
-
-
 def create_student(conn, student):
     sql = '''INSERT INTO student (name,mark,hobby,b_date,is_married)
     VALUES (?,?,?,?,?)
     '''
     try:
-        cursor=conn.cursor()
-        cursor.execute(sql,student)
+        cursor = conn.cursor()
+        cursor.execute(sql, student)
         conn.commit()
     except Error as e:
         print(e)
